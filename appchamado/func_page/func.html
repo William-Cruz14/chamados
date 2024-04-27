@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="meuscript.js" defer></script>
+    <title>Pagina do Funcionario</title>
+    <style>
+        body{
+            background-color: #845EC2;
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 45px;
+        }
+        table, tr, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+
+        th, td {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        #cab {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+        }
+        #labelfull, #labelnaofinalizado {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+        #form {
+           
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 1px;
+        
+
+        }
+
+        #responder {
+            margin-left: 10px;
+            background-color: #5719bc;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 1px;
+            width: 10%;
+            height: 35px;
+
+        }
+
+        #idchamado {
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        #res {
+            margin-left: 10px;
+        }
+
+        #btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+
+        #btnstyle {
+            background-color: #5719bc;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width: 10%;
+            height: 35px;
+
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div id="btn">
+        <button id="btnstyle"><a href="/index.html" style="text-decoration: none; color: black;">Página Usuarios </a></button>
+    </div>
+    <h1>Chamados</h1>
+
+    <label for="opcao" id="cab">Opções:</label>
+    <br><br>
+
+    <label for="opcao" id="labelfull">Todos os chamados</label>
+    <input type="radio" name="opcao" id="full">
+    <br><br>
+    <label for="opcao" id="labelnaofinalizado">Chamados não finalizados</label>
+    <input type="radio" name="opcao" id="naofinalizado">
+    <br><br>
+
+    <table id="resultados">
+        <tr>
+            <th id="id">ID</th>
+            <th id="nome">Nome</th>
+            <th id="email">Email</th>
+            <th id="assunto">Assunto</th>
+            <th id="mensagem">Mensagem</th>
+            <th id="resposta">Resposta</th>
+            <th id="finalizado">Finalizado</th>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <form action="" id="form">
+        <label for="ID">ID do chamado:</label>
+        <input type="text" id="idchamado" placeholder="sD1OcwbAuP" required>
+        <br><br>
+        <label for="resposta">Resposta do chamado:</label>
+        <br><br>
+        <textarea name="mensagem" id="res" cols="50" rows="5"></textarea>
+        <br><br>
+        <input type="submit" id="responder" value="Responder" required>
+    </form>
+
+</body>
+    
+</html>

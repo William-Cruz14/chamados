@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Usuario</title>
+    <script src="meuscript.js"></script>
+    <style>
+        body {
+            background-color: #EC6D8B;
+        }
+        #titulo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #labelnome, #labelemail, #labelassunto, #labelmensagem{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 20px;
+        }
+        #mensagem {
+            
+            margin-left: 30px;
+        }
+        #nome, #email {
+            margin-left: 20px;
+        }
+
+        #enviar {
+            height: 30px;
+            width:150px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 30px;
+            background-color: #00AD96;
+
+        }
+
+        #container {
+            display: grid;
+            grid-row: 1;
+            justify-content: center;
+
+        }
+
+        #btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+
+        #btnstyle {
+            background-color: #00AD96;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 30px;
+            width:150px;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="btn">
+        <button id="btnstyle"><a href="/func_page/func.html" style="text-decoration: none; color: black;">Página funcionário</a></button>
+    </div>
+
+    <h1 id="titulo">Crie um chamado</h1>
+    
+    
+    <div id="container">
+        <form action="" id="form" autocomplete="off">
+            <label for="nome" id="labelnome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            <br><br>
+            <label for="email" id="labelemail">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="assunto" id="labelassunto">Assunto:</label>
+            <input type="text" name="assunto" id="assunto" required>
+            <br><br>
+            <label for="mensagem" id="labelmensagem">Mensagem:</label><br><br>
+            <textarea name="mensagem" id="mensagem"  cols="30" rows="5"></textarea>
+            <br><br>
+            <input type="submit" id="enviar" value="Criar">
+        </form>
+
+    </div>
+
+    
+    
+
+    
+
+    
+</body>
+</html>
